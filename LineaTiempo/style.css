@@ -1,0 +1,278 @@
+:root {
+    --bg-color: #020617;
+    --card-bg: #1e293b;
+    --accent: #00f2fe;
+    --text: #f1f5f9;
+    --transition: all 0.3s ease;
+}
+
+/* 1. Reset General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* Evita el scroll global */
+}
+
+/* 2. Header y Navegación */
+header {
+    padding: 1rem 0 0.5rem;
+    text-align: center;
+    flex-shrink: 0;
+    /* Impide que se oculte en pantallas bajas */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+header h1 span {
+    color: var(--accent);
+}
+
+nav {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(30, 41, 59, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 10px 0;
+}
+
+nav a,
+.botones a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+nav a:hover,
+.botones a:hover {
+    color: var(--accent);
+    text-shadow: 0 0 8px var(--accent);
+}
+
+/* 3. Área Principal (Contenido) */
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 0;
+    /* Crucial para que el contenido no empuje al footer */
+}
+
+/* 4. Tarjetas (Equipo y Contacto) */
+.card-equipo,
+.card-contacto {
+    background: var(--card-bg);
+    padding: 1.5rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    width: 95%;
+    max-width: 500px;
+    text-align: center;
+    border-top: 3px solid var(--accent);
+    max-height: 100%;
+    /* La tarjeta se ajusta al espacio de main */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-equipo h1,
+.card-contacto h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--accent);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* 5. Listas e Integrantes */
+.lista-integrantes {
+    list-style: none;
+    text-align: center;
+}
+
+.lista-integrantes li {
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lista-integrantes li:last-child {
+    border-bottom: none;
+}
+
+/* Área de scroll para Contacto */
+.scroll-area {
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.scroll-area::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 10px;
+}
+
+.integrante-redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: var(--text);
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* 6. Sección de Botones Inferiores */
+.botones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(30, 41, 59, 0.2);
+    flex-shrink: 0;
+    /* Mantiene los botones siempre visibles */
+}
+
+/* 7. Footer */
+footer {
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    flex-shrink: 0;
+    /* Mantiene el footer siempre visible */
+}
+
+/* 8. Adaptabilidad para pantallas bajas (Laptops pequeñas) */
+@media (max-height: 700px) {
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    header {
+        padding: 0.5rem 0;
+    }
+
+    .card-equipo,
+    .card-contacto {
+        padding: 1rem 1.5rem;
+    }
+
+    .card-equipo h1 {
+        font-size: 1.4rem;
+    }
+
+    .lista-integrantes li,
+    .integrante-redes p {
+        font-size: 0.85rem;
+    }
+
+    nav ul,
+    .botones {
+        padding: 8px 0;
+        gap: 1rem;
+    }
+}
+
+/* --- Estilos para la Línea de Tiempo --- */
+.card-timeline {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    width: 95%;
+    max-width: 650px;
+    /* Un poco más ancho para las imágenes */
+    text-align: left;
+    /* Texto a la izquierda para mejor lectura */
+    border-top: 3px solid var(--accent);
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-timeline h2 {
+    color: var(--accent);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.timeline-img {
+    width: 100%;
+    max-height: 200px;
+    /* Limita la altura de la imagen */
+    object-fit: cover;
+    /* Para que la imagen no se deforme */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-timeline p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: rgba(241, 245, 249, 0.9);
+}
+
+.card-timeline ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.card-timeline li {
+    margin-bottom: 0.5rem;
+}

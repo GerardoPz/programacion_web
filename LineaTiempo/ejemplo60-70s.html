@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Terminal Años 70</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background-color: #00ff00;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>INICIANDO CONEXION ARPANET...</p>
+    <p>ESTABLECIENDO PROTOCOLO...</p>
+    <p>HOLA MUNDO. BIENVENIDO A LA DECADA DE 1970.</p>
+    <p>ESPERANDO COMANDO<span class="cursor"></span></p>
+</body>
+
+</html>
