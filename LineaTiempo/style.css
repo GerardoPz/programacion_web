@@ -6,7 +6,6 @@
     --transition: all 0.3s ease;
 }
 
-/* 1. Reset General */
 * {
     margin: 0;
     padding: 0;
@@ -21,15 +20,12 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /* Evita el scroll global */
 }
 
-/* 2. Header y Navegación */
 header {
     padding: 1rem 0 0.5rem;
     text-align: center;
     flex-shrink: 0;
-    /* Impide que se oculte en pantallas bajas */
 }
 
 header h1 {
@@ -71,7 +67,6 @@ nav a:hover,
     text-shadow: 0 0 8px var(--accent);
 }
 
-/* 3. Área Principal (Contenido) */
 main {
     flex-grow: 1;
     display: flex;
@@ -79,10 +74,8 @@ main {
     justify-content: center;
     padding: 1rem;
     min-height: 0;
-    /* Crucial para que el contenido no empuje al footer */
 }
 
-/* 4. Tarjetas (Equipo y Contacto) */
 .card-equipo,
 .card-contacto {
     background: var(--card-bg);
@@ -94,7 +87,6 @@ main {
     text-align: center;
     border-top: 3px solid var(--accent);
     max-height: 100%;
-    /* La tarjeta se ajusta al espacio de main */
     display: flex;
     flex-direction: column;
 }
@@ -114,7 +106,6 @@ main {
     display: block;
 }
 
-/* 5. Listas e Integrantes */
 .lista-integrantes {
     list-style: none;
     text-align: center;
@@ -130,7 +121,6 @@ main {
     border-bottom: none;
 }
 
-/* Área de scroll para Contacto */
 .scroll-area {
     overflow-y: auto;
     padding-right: 10px;
@@ -169,7 +159,6 @@ main {
     transform: translateY(-2px);
 }
 
-/* 6. Sección de Botones Inferiores */
 .botones {
     width: 100%;
     display: flex;
@@ -179,20 +168,16 @@ main {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(30, 41, 59, 0.2);
     flex-shrink: 0;
-    /* Mantiene los botones siempre visibles */
 }
 
-/* 7. Footer */
 footer {
     padding: 0.6rem;
     text-align: center;
     font-size: 0.75rem;
     opacity: 0.5;
     flex-shrink: 0;
-    /* Mantiene el footer siempre visible */
 }
 
-/* 8. Adaptabilidad para pantallas bajas (Laptops pequeñas) */
 @media (max-height: 700px) {
     header h1 {
         font-size: 1.5rem;
@@ -224,7 +209,6 @@ footer {
     }
 }
 
-/* --- Estilos para la Línea de Tiempo --- */
 .card-timeline {
     background: var(--card-bg);
     padding: 1.5rem;
@@ -232,9 +216,7 @@ footer {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
     width: 95%;
     max-width: 650px;
-    /* Un poco más ancho para las imágenes */
     text-align: left;
-    /* Texto a la izquierda para mejor lectura */
     border-top: 3px solid var(--accent);
     max-height: 100%;
     display: flex;
@@ -251,9 +233,7 @@ footer {
 .timeline-img {
     width: 100%;
     max-height: 200px;
-    /* Limita la altura de la imagen */
     object-fit: cover;
-    /* Para que la imagen no se deforme */
     border-radius: 8px;
     margin-bottom: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
