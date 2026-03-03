@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+    <libro>
+        <titulo>Libro 1</titulo>
+        <autor>Autor 1</autor>
+        <anio>2026</anio>
+        <categoria>Accion</categoria>
+        <precio>100</precio>
+    </libro>
+    <libro>
+        <titulo>Libro 2</titulo>
+        <autor>Autor 2</autor>
+        <anio>2026</anio>
+        <categoria>Romance</categoria>
+        <precio>150</precio>
+    </libro>
+    <libro>
+        <titulo>Libro 3</titulo>
+        <autor>Autor 3</autor>
+        <anio>2026</anio>
+        <categoria>Ciencia Ficcion</categoria>
+        <precio>750</precio>
+    </libro>
+    <libro>
+        <titulo>Libro 4</titulo>
+        <autor>Autor 4</autor>
+        <anio>2026</anio>
+        <categoria>Anime</categoria>
+        <precio>10</precio>
+    </libro>
+    <libro>
+        <titulo>Libro 5</titulo>
+        <autor>Autor 5</autor>
+        <anio>2026</anio>
+        <categoria>Accion</categoria>
+        <precio>100</precio>
+    </libro>
+    <libro>
+        <titulo>Libro 6</titulo>
+        <autor>Autor 6</autor>
+        <anio>2026</anio>
+        <categoria>Ciencia Ficcion</categoria>
+        <precio>350</precio>
+    </libro>
+</libreria>

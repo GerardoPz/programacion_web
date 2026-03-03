@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cartelera.xsl"?>
+<carteleracine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cartelera.xsd">
+    <pelicula id="1">
+        <titulo>The Social Network</titulo>
+        <director>David Fincher</director>
+        <anio>2010</anio>
+        <clasificacion>PG-13</clasificacion>
+        <genero>Biografico</genero>
+        <duracion>120 min</duracion>
+    </pelicula>
+    <pelicula id="2">
+        <titulo>El código enigma</titulo>
+        <director>Morten Tyldum</director>
+        <anio>2014</anio>
+        <clasificacion>PG-13</clasificacion>
+        <genero>Thriller</genero>
+        <duracion>114 min</duracion>
+    </pelicula>
+    <pelicula id="">
+        <titulo>Son como niños 2</titulo>
+        <director>Dennis Dugan</director>
+        <anio>2013</anio>
+        <clasificacion>PG-13</clasificacion>
+        <genero>Comedia</genero>
+        <duracion>101 min</duracion>
+    </pelicula>
+    <pelicula id="4">
+        <titulo>El hombre araña</titulo>
+        <director>Sam Raimi</director>
+        <anio>2002</anio>
+        <clasificacion>PG-13</clasificacion>
+        <genero>Acción</genero>
+        <duracion>121 min</duracion>
+    </pelicula>
+    <pelicula id="5">
+        <titulo>Juego de honor</titulo>
+        <director>Thomas Carter</director>
+        <anio>2005</anio>
+        <clasificacion>PG-13</clasificacion>
+        <genero>Drama</genero>
+        <duracion>136 min</duracion>
+    </pelicula>
+</carteleracine>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="practica3.xsl"?>
+<semestres xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="practica3.xsd">
+    <curso id="1">
+        <nombre>Mantenimiento Preventivo de PC</nombre>
+        <docente>Gustavo Hernandez Acevedo</docente>
+        <horario>Lunes - Viernes 09:00 - 14:00</horario>
+        <salon>CC 2</salon>
+    </curso>
+    <curso id="2">
+        <nombre>Blender 3D</nombre>
+        <docente>Sergio Salgado Orozco</docente>
+        <horario>Lunes - Viernes 09:00 - 14:00</horario>
+        <salon>CC 1</salon>
+    </curso>
+    <curso id="3">
+        <nombre>Blender 3D</nombre>
+        <docente>Sergio Salgado Orozco</docente>
+        <horario>Lunes - Viernes 09:00 - 14:00</horario>
+        <salon>CC 1</salon>
+    </curso>
+    <curso id="4">
+        <nombre>Iniciando con IA</nombre>
+        <docente>Jorge Luis Panigua</docente>
+        <horario>Lunes - Viernes 09:00 - 14:00</horario>
+        <salon>CC 1</salon>
+    </curso>
+    <curso id="5">
+        <nombre>Introduccion a la logica con IA generativa para jovenes programadores</nombre>
+        <docente>Patricia Quitl Gonzalez</docente>
+        <horario>Lunes - Viernes 09:00 - 14:00</horario>
+        <salon>CC 3</salon>
+    </curso>
+    <curso id="6">
+        <nombre>Introduccion a la programacion con lenguaje R</nombre>
+        <docente>Rafael Herrera Garcia</docente>
+        <horario>Lunes - Viernes 09:00 - 14:00</horario>
+        <salon>CC 1</salon>
+    </curso>
+    <curso id="7">
+        <nombre>Control de versiones con Git y GitHub</nombre>
+        <docente>Daniela Espinoza Rojas</docente>
+        <horario>Lunes - Viernes 15:00 - 19:00</horario>
+        <salon>CC 1</salon>
+    </curso>
+</semestres>
